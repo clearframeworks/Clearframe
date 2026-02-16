@@ -534,3 +534,20 @@ body::after{
   .offers-grid{ grid-template-columns: 1fr; }
   .offer-mediaLink img{ height: 240px; }
 }
+
+/* =========================
+   FAQ (A1)
+   ========================= */
+
+.faq h3{
+  margin: 14px 0 6px 0;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+.faq p{
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 14px;
+}
