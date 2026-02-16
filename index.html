@@ -4,12 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Clearframe</title>
-  <meta name="description" content="Fast, clean websites built to be understood." />
+  <!-- Primary SEO -->
+  <title>Clearframe | One-Page Websites for Local Businesses</title>
+  <meta name="description" content="Clearframe builds fast, clean one-page websites for local businesses. Simple structure, clear messaging, and mobile-first design built to be understood." />
+  <link rel="canonical" href="https://clearframeworks.org/" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
 
-  <!-- ✅ Open Graph (Facebook link preview) -->
-  <meta property="og:title" content="Clearframe" />
-  <meta property="og:description" content="Fast, clean websites built to be understood." />
+  <!-- Open Graph (Facebook link preview) -->
+  <meta property="og:title" content="Clearframe | One-Page Websites for Local Businesses" />
+  <meta property="og:description" content="Fast, clean websites built to be understood. One-page authority sites for real businesses." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://clearframeworks.org/" />
   <meta property="og:image" content="https://clearframeworks.org/assets/img/og-clearframe.png" />
@@ -17,9 +20,36 @@
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="stylesheet" href="css/styles.css?v=20" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Clearframe | One-Page Websites for Local Businesses" />
+  <meta name="twitter:description" content="Simple structure. Clear message. Real credibility." />
+  <meta name="twitter:image" content="https://clearframeworks.org/assets/img/og-clearframe.png" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Clearframe",
+    "url": "https://clearframeworks.org/",
+    "description": "Clearframe builds fast, clean one-page websites designed for clarity and speed.",
+    "areaServed": "US",
+    "email": "mailto:michaelpaynotta@clearframeworks.org",
+    "brand": {
+      "@type": "Brand",
+      "name": "Clearframe"
+    },
+    "offers": {
+      "@type": "Offer",
+      "category": "Website Design",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css?v=22" />
 </head>
 
 <body>
@@ -196,12 +226,12 @@
 
           <div class="start-actions">
             <a class="btn primary"
-               href="mailto:paynottamichael@gmail.com?subject=Clearframe%20Website%20Request">
+               href="mailto:michaelpaynotta@clearframeworks.org?subject=Clearframe%20Website%20Request">
               Email a request
             </a>
 
             <button class="btn" type="button" id="copyEmailBtnCF">
-              paynottamichael@gmail.com
+              michaelpaynotta@clearframeworks.org
             </button>
 
             <span class="micro" id="copyHintCF" aria-live="polite">Click to copy email.</span>
@@ -230,7 +260,7 @@
 
   <script>
     (function () {
-      const email = "paynottamichael@gmail.com";
+      const email = "michaelpaynotta@clearframeworks.org";
       const subject = "Clearframe%20Website%20Request";
 
       async function copyEmail() {
