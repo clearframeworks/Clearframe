@@ -1,0 +1,1047 @@
+{
+  "startScene": "intro_intake",
+  "scenes": {
+    "intro_intake": {
+      "text": "You do not wake at the Ninth Gate.\nYou become aware of it.\n\nCold stone presses against your back or shoulder\u2014never painfully, just enough that you register you have been still for some time.\n\nThe air carries damp limestone, old ash, and a faint metallic tang that could be iron\u2014or could be something else you don\u2019t want to name yet.\n\nMemory returns in assembled pieces.\n\nA line that did not move forward so much as compress.\nVoices kept low.\nNo shouting.\nNo threats.\n\nWhen you asked questions, the answers were careful and procedural, as if no one present was allowed to improvise.\n\nYou were asked your name.\nSomething else was written down instead.\n\nAfter that, time stopped behaving normally.\nDoors opened that did not look guarded.\nCorridors stretched longer than they should have.\n\nNow\u2014\n\nthe bars are in front of you.\nThe corridor is beyond them.\nAnd your breath sounds too loud in the quiet.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "intro_cellblock",
+          "effects": {
+            "regulation": 1
+          }
+        }
+      ]
+    },
+    "intro_cellblock": {
+      "text": "The cell is narrow, but not cruelly so.\nWide enough to lie down.\nNarrow enough that pacing would feel like a performance for no one.\n\nIron bars face a corridor lit by a single torch mounted high on the wall.\nThe flame burns clean and steady.\nIt throws light across the floor and bars, but leaves the corners dim.\n\nYou could see someone coming long before they reached you.\n\nAcross the corridor, other cells line the wall.\nOne is empty, straw undisturbed.\nAnother holds a man sitting upright against the stone, knees drawn close, eyes closed.\nHe has not moved since you became aware of him.\n\nFootsteps pass from time to time.\nNot patrols.\nJust movement.\nPeople going somewhere.\n\nA shallow bowl rests near the bars.\nThin broth.\nWarm.\nEnough to keep you alive.\nNot enough to enjoy.\n\nSleep comes, but it never goes deep.\nYour eyes close at some point\u2014you\u2019re certain of that.\nBut your mind never fully releases its grip on the space.\n\nWhen awareness returns, it feels less like waking and more like continuing.\n\nThen the corridor changes.\n\nNot in what it is\u2014\nin how it feels.\n\nAttended.\n\nFootsteps stop near your cell.\nA guard stands just beyond the bars.\n\nPlain armor.\nKing Canaan\u2019s colors, worn but intact.\n\nHe checks the torch first, adjusts it slightly, then looks at you.\n\n\"You\u2019re awake,\" he says.\nIt isn\u2019t a question.\n\n\"You\u2019ll be moved later. No schedule.\"\n\nHe pauses, then adds, as if remembering something minor:\n\n\"If you need water before then, speak now.\"",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "intro_agency_water",
+          "effects": {
+            "regulation": 1
+          }
+        }
+      ]
+    },
+    "intro_agency_water": {
+      "text": "The guard does not rush you.\nHe does not pressure you.\n\nThe moment feels ordinary\u2014and somehow important.\n\nPLAYER AGENCY BEGINS HERE.\n\nDo you ask for water?",
+      "choices": [
+        {
+          "label": "Ask for water.",
+          "next": "r_water_yes",
+          "effects": {
+            "stability": 1
+          }
+        },
+        {
+          "label": "Say nothing.",
+          "next": "r_water_silent",
+          "effects": {
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Ask who decides when you\u2019re moved.",
+          "next": "r_water_question",
+          "effects": {
+            "instability": 1
+          }
+        },
+        {
+          "label": "Watch him instead of answering.",
+          "next": "r_water_watch",
+          "effects": {
+            "observation": 1,
+            "regulation": 1
+          }
+        }
+      ],
+      "speaker": "guard",
+      "dialogue": "If you need water before then, speak now."
+    },
+    "r_water_yes": {
+      "text": "The guard nods once.\n\nHe does not smile.\nHe does not soften.\n\nHe simply turns his head slightly.\n\nAnother figure steps into the torchlight as if they had been standing there the whole time.\nA cup is slid through the bars.\n\nThe water is cool.\nClean.\nAlmost insulting.\n\nYou drink.\n\nThe guard watches\u2014not your thirst, but your manner.\nHow quickly.\nHow much.\nWhether your hands shake.\n\nWhen you\u2019re done, the cup is retrieved with the same quiet precision.\n\nThe guard speaks again, as if stating weather:\nThe bell may sound.\nStand when it does.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_intake_1",
+          "effects": {}
+        }
+      ]
+    },
+    "r_water_silent": {
+      "text": "You say nothing.\n\nThe guard waits long enough that your silence becomes a choice instead of an omission.\n\nThen he nods\u2014as if he has received the answer he expected.\n\nNo schedule, he repeats.\nAnd no explanations.\n\nHe steps away.\n\nThe corridor resumes moving.\nSomewhere farther down the hall, a door opens and closes with the weight of a mechanism doing what it was built to do.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_intake_1",
+          "effects": {}
+        }
+      ]
+    },
+    "r_water_question": {
+      "text": "You ask who decides.\n\nThe guard\u2019s expression does not change, but his posture tightens\u2014subtle, trained.\n\nHe looks past you for half a second, toward the corridor behind.\n\nAssessment decides, he says.\n\nNot a name.\nNot a person.\nA function.\n\nThen, as if the exchange has been filed and closed:\n\nIf you need water before movement, speak now.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_intake_1",
+          "effects": {}
+        }
+      ]
+    },
+    "r_water_watch": {
+      "text": "You don\u2019t answer.\n\nYou watch the seams in his armor.\nThe wear marks at the elbow.\nThe way his hand rests near a ring of keys he never touches.\n\nHe notices the watching.\n\nNot offended.\nNot threatened.\n\nRecorded.\n\nHe checks the torch again\u2014unnecessarily\u2014then steps away.\n\nThe corridor returns to its quiet rhythm.\nYour cell does not feel smaller.\nIt feels more observed.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_intake_1",
+          "effects": {}
+        }
+      ]
+    },
+    "arc1_intake_1": {
+      "text": "A bell sounds once.\n\nNot loud.\nNot urgent.\n\nJust present.\n\nLocks answer it.\nDoors open along the corridor one after another, each release timed as if the Gate prefers symmetry.\n\nA guard does not enter your cell.\nHe stands aside and gestures.\n\nThe corridor air is cooler than the cell.\nIt smells faintly of wet stone and boiled grain.\n\nYou step out and find yourself inside a line that forms without instruction.\n\nNo one speaks.\n\nAt the far end, a man sits at a narrow desk, writing.\n\nBeside him stands a woman with hands folded behind her back. She watches each person approach.\n\nWhen you stand before the desk, the man continues writing for a moment longer before pausing.\n\nHe asks for your name.\n\nThe woman\u2019s eyes do not leave your face.",
+      "choices": [
+        {
+          "label": "Give your name.",
+          "next": "arc1_corridor_1",
+          "effects": {
+            "stability": 1
+          }
+        },
+        {
+          "label": "Say nothing.",
+          "next": "arc1_corridor_1",
+          "effects": {
+            "instability": 1,
+            "exhaustion": 1
+          }
+        },
+        {
+          "label": "Ask where you are.",
+          "next": "arc1_corridor_1",
+          "effects": {
+            "instability": 1
+          }
+        },
+        {
+          "label": "Observe the room before responding.",
+          "next": "arc1_corridor_1",
+          "effects": {
+            "observation": 2
+          }
+        }
+      ]
+    },
+    "arc1_corridor_1": {
+      "text": "The man writes something.\n\nThe scratch of his pen is the loudest sound in the room.\n\nThe woman\u2019s gaze does not move.\n\nYou are not sure which is worse\u2014\nthe writing, or the watching.\n\nA guard gestures.\n\nYou are guided past a wall lined with narrow plaques. Each bears a number.\n\nNone bear names.\n\nThe corridor bends.\nTorchlight follows the bend as if it has learned the shape of the place.\n\nYou pass through another door.",
+      "choices": [
+        {
+          "label": "Watch the numbers.",
+          "next": "arc1_mark_1",
+          "effects": {
+            "observation": 2
+          }
+        },
+        {
+          "label": "Watch the woman.",
+          "next": "arc1_mark_1",
+          "effects": {
+            "observation": 1,
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Watch the guard\u2019s hands.",
+          "next": "arc1_mark_1",
+          "effects": {
+            "observation": 1
+          }
+        },
+        {
+          "label": "Focus on the faint draft ahead.",
+          "next": "arc1_mark_1",
+          "effects": {
+            "observation": 2,
+            "flags": [
+              "noticed_draft"
+            ]
+          }
+        }
+      ]
+    },
+    "arc1_mark_1": {
+      "text": "The draft touches your face as you pass the plaques.\n\nNot strong enough to promise an exit.\nJust strong enough to suggest there is space beyond the stone.\n\nA latch clicks.\n\nThe door behind you closes.\nThe door ahead opens.\n\nYou are not shoved.\nYou are not restrained.\n\nYou are routed.\n\nAnd the Gate does it without drama.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_cell_1",
+          "effects": {}
+        }
+      ]
+    },
+    "arc1_cell_1": {
+      "text": "The door closes.\n\nThe space is small but clean.\n\nA stone platform rests against one wall.\nA shallow basin sits in the corner.\n\nThe slit of light shifts slowly across the opposite wall.\n\nYou hear distant movement through stone.\n\nNot screams.\nNot pleas.\n\nProcedure.\n\nEven the silence feels maintained.",
+      "choices": [
+        {
+          "label": "Sit.",
+          "next": "arc1_bell_1",
+          "effects": {
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Inspect the walls carefully.",
+          "next": "arc1_bell_1",
+          "effects": {
+            "observation": 2,
+            "flags": [
+              "inspected_walls"
+            ]
+          }
+        },
+        {
+          "label": "Lie down.",
+          "next": "arc1_bell_1",
+          "effects": {
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Listen for patterns in the sounds.",
+          "next": "arc1_bell_1",
+          "effects": {
+            "observation": 1,
+            "regulation": 1,
+            "flags": [
+              "listened_patterns"
+            ]
+          }
+        }
+      ]
+    },
+    "arc1_bell_1": {
+      "text": "Time passes without announcing itself.\n\nThen:\n\nA bell.\n\nDoors open along the corridor.\n\nYou are directed into line.\n\nNo words are exchanged.\n\nAs you walk, someone ahead falters briefly before steadying themselves.\n\nNo one reacts.\n\nThe line continues.\nThat, too, is a kind of message.",
+      "choices": [
+        {
+          "label": "Follow without hesitation.",
+          "next": "__SYSTEM_WORK_ASSIGN__",
+          "effects": {
+            "stability": 1
+          }
+        },
+        {
+          "label": "Walk more slowly.",
+          "next": "__SYSTEM_WORK_ASSIGN__",
+          "effects": {
+            "instability": 1
+          }
+        },
+        {
+          "label": "Try to look into other cells.",
+          "next": "__SYSTEM_WORK_ASSIGN__",
+          "effects": {
+            "observation": 1,
+            "instability": 1
+          }
+        },
+        {
+          "label": "Try to catch someone\u2019s eye.",
+          "next": "__SYSTEM_WORK_ASSIGN__",
+          "effects": {
+            "observation": 1,
+            "flags": [
+              "sought_eye_contact"
+            ]
+          }
+        }
+      ]
+    },
+    "arc1_eye_1": {
+      "text": "The brush scrapes softly.\n\nStone dust gathers beneath your fingers.\n\nSomewhere behind you, another brush keeps time.\n\nWhile working, you feel someone watching.\n\nAcross the corridor, a man meets your gaze briefly.\n\nHe looks away first.\n\nLater, you notice a woman moving her brush in a deliberate rhythm\u2014three strokes, pause, three strokes.\n\nNo one speaks.\n\nBut the corridor is full of communication anyway.",
+      "choices": [
+        {
+          "label": "Maintain eye contact with the man.",
+          "next": "arc1_return_1",
+          "effects": {
+            "observation": 1,
+            "flags": [
+              "held_gaze"
+            ]
+          }
+        },
+        {
+          "label": "Mirror the woman\u2019s rhythm.",
+          "next": "arc1_return_1",
+          "effects": {
+            "regulation": 2,
+            "flags": [
+              "mirrored_rhythm"
+            ]
+          }
+        },
+        {
+          "label": "Continue as before.",
+          "next": "arc1_return_1",
+          "effects": {
+            "stability": 1
+          }
+        },
+        {
+          "label": "Break rhythm intentionally.",
+          "next": "arc1_return_1",
+          "effects": {
+            "instability": 2,
+            "flags": [
+              "broke_rhythm"
+            ]
+          }
+        }
+      ]
+    },
+    "arc1_return_1": {
+      "text": "A bell sounds.\n\nNot closer.\nNot farther.\n\nJust present.\n\nBrushes are collected without ceremony.\n\nHands rise.\nHandles are taken.\n\nNo one lingers.\n\nYou are returned to your cell.\n\nThe light now strikes the opposite wall.\n\nThe air feels heavier.\n\nAs if the Gate has tightened a fraction around the day you just lived.",
+      "choices": [
+        {
+          "label": "Sit.",
+          "next": "arc1_night_1",
+          "effects": {
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Replay the day in your mind.",
+          "next": "arc1_night_1",
+          "effects": {
+            "observation": 1,
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Examine your hands.",
+          "next": "arc1_night_1",
+          "effects": {
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Sleep.",
+          "next": "arc1_night_1",
+          "effects": {
+            "regulation": 1
+          }
+        }
+      ]
+    },
+    "arc1_night_1": {
+      "text": "Darkness arrives gradually.\n\nNo torches.\nNo patrol calls.\n\nOnly the sound of distant doors closing one by one.\n\nYou become aware of your breathing.\n\nIt feels louder than it should.\n\nThen you realize the more unsettling truth:\n\nIt is not louder.\n\nEverything else has become quieter.\n\nAs if the Gate is listening.",
+      "choices": [
+        {
+          "label": "Slow your breathing.",
+          "next": "arc1_morning_gate",
+          "effects": {
+            "regulation": 2,
+            "flags": [
+              "controlled_breath"
+            ]
+          }
+        },
+        {
+          "label": "Sit upright.",
+          "next": "arc1_morning_gate",
+          "effects": {
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Lie still.",
+          "next": "arc1_morning_gate",
+          "effects": {
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Listen for movement beyond the wall.",
+          "next": "arc1_morning_gate",
+          "effects": {
+            "observation": 1,
+            "flags": [
+              "night_listen"
+            ]
+          }
+        }
+      ]
+    },
+    "arc1_morning_gate": {
+      "text": "The bell.\n\nYour body rises before your mind finishes deciding.\n\nThe corridor you enter is not the same one from yesterday.\n\nIt is narrower.\n\nThe air is cooler.\n\nSomething has shifted.\n\nYou understand the rhythm now.\n\nYou also understand this:\n\nNothing here explains itself.\n\nThe Gate does not argue.\n\nIt simply routes.",
+      "choices": [
+        {
+          "label": "Follow as directed.",
+          "next": "__SYSTEM_MORNING_CHECK__",
+          "effects": {
+            "stability": 1
+          }
+        },
+        {
+          "label": "Slow your pace.",
+          "next": "__SYSTEM_MORNING_CHECK__",
+          "effects": {
+            "instability": 1
+          }
+        },
+        {
+          "label": "Watch the guards carefully.",
+          "next": "__SYSTEM_MORNING_CHECK__",
+          "effects": {
+            "observation": 1
+          }
+        },
+        {
+          "label": "Watch the others instead.",
+          "next": "__SYSTEM_MORNING_CHECK__",
+          "effects": {
+            "observation": 1,
+            "regulation": 1
+          }
+        }
+      ]
+    },
+    "arc1_falsevector_hint": {
+      "text": "Your fingers find a seam.\n\nStone that should be uniform gives slightly differently under pressure.\n\nFor a moment, you feel air where there should be none.\n\nThe corridor remains silent.\n\nThen\u2014footsteps.\n\nNot hurried.\n\nSimply present.\n\nWhatever you touched, the Gate felt it.\n\nOr something inside the Gate did.",
+      "choices": [
+        {
+          "label": "Let go immediately and resume brushing.",
+          "next": "arc1_eye_1",
+          "effects": {
+            "stability": 1
+          }
+        },
+        {
+          "label": "Press again, harder.",
+          "next": "arc1_absorption_event",
+          "effects": {
+            "instability": 2,
+            "exhaustion": 1,
+            "flags": [
+              "forced_seam"
+            ]
+          }
+        },
+        {
+          "label": "Do nothing. Freeze.",
+          "next": "arc1_eye_1",
+          "effects": {
+            "exhaustion": 1
+          }
+        }
+      ]
+    },
+    "arc1_absorption_event": {
+      "text": "Stone shifts more than it should.\n\nA thin panel yields.\n\nFor a moment\u2014\n\nYou see not outside.\n\nOnly more corridor.\n\nMore stone.\n\nMore plaques.\n\nA bell sounds.\n\nNot the usual bell.\n\nLower.\n\nThe panel resets.\n\nFootsteps approach.\n\nA guard stands beside you.\n\nHe does not speak.\n\nHe gestures.\n\nYou are escorted back.\n\nNot punished.\n\nRepositioned.\n\nThe next morning, the plaques are different.\n\nAnd you cannot prove to yourself that they weren\u2019t always different.",
+      "choices": [
+        {
+          "label": "Say nothing and move.",
+          "next": "arc1_night_after_absorb",
+          "effects": {
+            "stability": 1
+          }
+        },
+        {
+          "label": "Resist by staying still.",
+          "next": "arc1_night_after_absorb",
+          "effects": {
+            "instability": 2,
+            "exhaustion": 1
+          }
+        }
+      ]
+    },
+    "arc1_night_after_absorb": {
+      "text": "Your cell is not the same.\n\nIt is the same size.\n\nThe same stone.\n\nThe same light slit.\n\nAnd yet it is not the same.\n\nThe bell cycle continues.\n\nThe Gate does not argue.\n\nIt simply repositions.\n\nYou lie down and realize your body has learned something without telling you:\n\nWhere the wall is.\nWhere the floor is.\nWhere the air feels wrong.",
+      "choices": [
+        {
+          "label": "Breathe. Count the bell cycle in your head.",
+          "next": "arc1_morning_gate",
+          "effects": {
+            "regulation": 2,
+            "flags": [
+              "counted_cycle"
+            ]
+          }
+        },
+        {
+          "label": "Press your ear to the wall and listen.",
+          "next": "arc1_morning_gate",
+          "effects": {
+            "observation": 1,
+            "flags": [
+              "night_listen"
+            ]
+          }
+        }
+      ]
+    },
+    "arc1_near_miss": {
+      "text": "The line forms.\n\nA guard stands with a tablet.\n\nHe begins reading names.\n\nOne.\n\nAnother.\n\nThen he pauses.\n\nHis finger stops on the page.\n\nYour breathing slows without permission.\n\nHe looks up.\n\nNot at you.\n\nHe reads another name.\n\nThe line moves.\n\nThe moment passes.\n\nYou are still here.\n\nNo one tells you what you almost were.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "__SYSTEM_WORK_ASSIGN__",
+          "effects": {
+            "regulation": 1
+          }
+        }
+      ]
+    },
+    "arc1_reassigned_official": {
+      "text": "The line forms.\n\nA guard stands with a tablet.\n\nHe reads names.\n\nOne.\n\nAnother.\n\nThen he pauses.\n\nYour name.\n\nNo tone change.\n\nNo explanation.\n\nYou step out of line.\n\nThe corridor you enter slopes downward slightly.\n\nThe air changes.\n\nNot freer.\n\nDifferent.\n\nYou are being moved.\n\nNot released.\n\nReassigned.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc2_placeholder",
+          "effects": {}
+        }
+      ]
+    },
+    "arc1_hidden_door_prompt": {
+      "text": "The corridor narrows.\n\nA faint draft touches your face.\n\nA door that was sealed yesterday sits slightly ajar.\n\nNo one reacts.\n\nNo one looks.\n\nThe line continues.\n\nThe opening remains.\n\nSmall.\n\nPatient.\n\nReal.\n\nAnd the most dangerous thing about it is this:\n\nIt does not feel like a trap.\n\nIt feels like an option the system pretends not to see.",
+      "choices": [
+        {
+          "label": "Continue forward.",
+          "next": "__SYSTEM_WORK_ASSIGN__",
+          "effects": {
+            "stability": 1
+          }
+        },
+        {
+          "label": "Step slightly toward the door.",
+          "next": "arc2_placeholder_lateral",
+          "effects": {}
+        }
+      ]
+    },
+    "arc1_death_absorbed": {
+      "text": "The bell sounds.\n\nYou do not rise.\n\nThe door opens.\n\nA guard stands and waits.\n\nYou cannot stand.\n\nThere is no shouting.\n\nNo anger.\n\nOnly procedure.\n\nYou are lifted.\n\nThe corridor passes.\n\nPlaques.\n\nStone.\n\nThen less sound.\n\nThen none.\n\nThe Gate continues.\n\nWithout you.",
+      "choices": [
+        {
+          "label": "Start over.",
+          "next": "__SYSTEM_RESET__",
+          "effects": {}
+        }
+      ]
+    },
+    "arc2_placeholder": {
+      "text": "The corridor continues downward.\n\nThe air grows cooler.\n\nVoices exist here\u2014but not for you.\n\nNot yet.\n\n(Arc 2 is not deployed in this build.)",
+      "choices": [
+        {
+          "label": "Return to title.",
+          "next": "__SYSTEM_TO_TITLE__",
+          "effects": {}
+        }
+      ]
+    },
+    "arc2_placeholder_lateral": {
+      "text": "You move sideways.\n\nNot out.\n\nDeeper.\n\nStone shifts behind you.\n\nThe line never stops.\n\nNo alarm sounds.\n\nThe Gate does not announce mistakes.\n\nIt only routes them.\n\n(Arc 2 is not deployed in this build.)",
+      "choices": [
+        {
+          "label": "Return to title.",
+          "next": "__SYSTEM_TO_TITLE__",
+          "effects": {}
+        }
+      ]
+    },
+    "work_brush_1": {
+      "text": "You are led into a work corridor.\n\nNot a workshop.\nNot a yard.\n\nA corridor.\n\nAs if even labor must remain inside the spine of the place.\n\nA guard sets a brush into your hands.\nThe handle is worn smooth by many palms.\n\nThe lower portion of the wall shows faint residue.\nSomething that has been scrubbed many times.\n\nOthers kneel and begin brushing in silence.\n\nNo one supervises directly.\n\nAnd yet you can feel it:\n\nBeing watched.\n\nNot personally.\n\nSystemically.",
+      "choices": [
+        {
+          "label": "Begin brushing.",
+          "next": "r_brush_begin",
+          "effects": {
+            "stability": 1
+          }
+        },
+        {
+          "label": "Observe how others move first.",
+          "next": "r_brush_observe",
+          "effects": {
+            "observation": 2
+          }
+        },
+        {
+          "label": "Brush more thoroughly than necessary.",
+          "next": "r_brush_thorough",
+          "effects": {
+            "stability": 1,
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Test the stone instead of brushing.",
+          "next": "arc1_falsevector_hint",
+          "effects": {
+            "instability": 2,
+            "observation": 1
+          }
+        }
+      ]
+    },
+    "r_brush_begin": {
+      "text": "You take the brush.\n\nThe bristles are stiff with old grit.\n\nYou lower your arm and begin.\n\nStone gives nothing back, only dust.\n\nAcross the corridor, a guard\u2019s posture shifts\u2014an acknowledgement so small it could be imagined.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_eye_1",
+          "effects": {}
+        }
+      ]
+    },
+    "r_brush_observe": {
+      "text": "You wait half a breath.\n\nNot long enough to be defiance.\n\nLong enough to learn.\n\nYou watch wrists, pressure, rhythm.\n\nYou notice who rushes and who pretends not to.\n\nThen you begin.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_eye_1",
+          "effects": {}
+        }
+      ]
+    },
+    "r_brush_thorough": {
+      "text": "You work as if the stone is watching.\n\nLong strokes. Even pressure.\n\nThe brush squeals once\u2014too loud.\n\nA worker beside you flinches.\n\nNo one speaks.\n\nYou slow, then continue, controlled.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_eye_1",
+          "effects": {}
+        }
+      ]
+    },
+    "work_water_1": {
+      "text": "You are handed a sloshing bucket.\n\nWarm water. Not clean. Not foul.\n\nA line of you moves down a narrow corridor where stone channels drink whatever spills.\n\nThe task is simple:\ncarry.\n\nThe difficulty is that nothing here is only a task.",
+      "choices": [
+        {
+          "label": "Carry it steady, eyes forward.",
+          "next": "r_water_carry_steady",
+          "effects": {
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Walk faster to finish sooner.",
+          "next": "r_water_carry_fast",
+          "effects": {
+            "instability": 1,
+            "exhaustion": 1
+          }
+        },
+        {
+          "label": "Match the pace of the person ahead.",
+          "next": "r_water_carry_match",
+          "effects": {
+            "stability": 1
+          }
+        },
+        {
+          "label": "Watch the guard\u2019s hands, not his face.",
+          "next": "r_water_carry_watch",
+          "effects": {
+            "observation": 1
+          }
+        }
+      ]
+    },
+    "r_water_carry_steady": {
+      "text": "Your arms burn slowly.\n\nYou keep the surface level.\n\nThe water trembles, but does not spill.\n\nA guard passes you without looking.\n\nSomehow, that feels like approval.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {}
+        }
+      ]
+    },
+    "r_water_carry_fast": {
+      "text": "You speed up.\n\nThe bucket answers immediately.\n\nWater slaps the rim and runs down your wrist.\n\nThe corridor\u2019s channel drinks it.\n\nA guard\u2019s gaze touches you\u2014brief, cold, recorded.\n\nYou slow down without being told.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {}
+        }
+      ]
+    },
+    "r_water_carry_match": {
+      "text": "You adjust to the body in front of you.\n\nNot friendship.\n\nNot alliance.\n\nJust synchronization.\n\nFor a moment the line moves like one thing.\n\nThe Gate likes that.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {}
+        }
+      ]
+    },
+    "r_water_carry_watch": {
+      "text": "You watch his hands.\n\nThey are clean.\n\nNo tremor.\n\nNo impatience.\n\nThe ring on his finger is plain, worn at the edges.\n\nHe notices you noticing.\n\nHis hands do not change.\n\nYour grip tightens anyway.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {
+            "attention": 1
+          }
+        }
+      ]
+    },
+    "work_linen_1": {
+      "text": "A stack of linen is dropped on a table.\n\nNot bedding.\nNot clothing.\n\nStrips.\nFolded and refolded.\n\nEach bundle has a wax tag stamped with a number.\n\nThe task is sorting.\n\nThe test is whether you treat the numbers like they matter.",
+      "choices": [
+        {
+          "label": "Sort by the numbers exactly.",
+          "next": "r_linen_sort_exact",
+          "effects": {
+            "regulation": 1,
+            "stability": 1
+          }
+        },
+        {
+          "label": "Sort by cleanliness instead of numbers.",
+          "next": "r_linen_sort_clean",
+          "effects": {
+            "instability": 1,
+            "observation": 1
+          }
+        },
+        {
+          "label": "Swap two tags when no one is looking.",
+          "next": "r_linen_swap",
+          "effects": {
+            "instability": 2,
+            "flags": [
+              "tampered_tags"
+            ]
+          }
+        },
+        {
+          "label": "Memorize the numbers you see.",
+          "next": "r_linen_memorize",
+          "effects": {
+            "observation": 2,
+            "flags": [
+              "memorized_tags"
+            ]
+          }
+        }
+      ]
+    },
+    "r_linen_sort_exact": {
+      "text": "You place each bundle where it belongs.\n\nThe numbers become a rhythm.\n\nOrder without meaning.\n\nA clerk passes and makes a small mark on a slate.\n\nNot praise.\n\nJust recording.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {}
+        }
+      ]
+    },
+    "r_linen_sort_clean": {
+      "text": "You choose the linen by touch.\n\nClean to one side.\n\nStained to the other.\n\nIt feels sensible.\n\nA guard glances at the piles and frowns\u2014just once.\n\nThe numbers mattered more than the fabric.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {
+            "attention": 1
+          }
+        }
+      ]
+    },
+    "r_linen_swap": {
+      "text": "Two tags trade places.\n\nThe move is small.\n\nThe consequence is not.\n\nYou don\u2019t know that yet.\n\nA worker beside you exhales sharply through the nose\u2014almost a laugh, almost a warning.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {
+            "attention": 2,
+            "exhaustion": 1
+          }
+        }
+      ]
+    },
+    "r_linen_memorize": {
+      "text": "You read the wax marks as if they are scripture.\n\nThey repeat.\n\nNot many.\n\nA narrow range.\n\nYou notice gaps where a number should be.\n\nThe Gate does not label what it removes.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {}
+        }
+      ]
+    },
+    "work_plaque_1": {
+      "text": "You are given a damp cloth.\n\nA wall of plaques waits in the dim.\n\nNumbers etched into metal.\n\nNot names.\n\nThe task is to wipe them clean.\n\nThe trick is that you can\u2019t tell if the dust is age or evidence.",
+      "choices": [
+        {
+          "label": "Clean only the plaques you\u2019re pointed to.",
+          "next": "r_plaque_assigned",
+          "effects": {
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Clean extra plaques to be safe.",
+          "next": "r_plaque_extra",
+          "effects": {
+            "regulation": 1,
+            "exhaustion": 1
+          }
+        },
+        {
+          "label": "Run your thumb along an etched groove.",
+          "next": "r_plaque_groove",
+          "effects": {
+            "observation": 2,
+            "flags": [
+              "inspected_plaques"
+            ]
+          }
+        },
+        {
+          "label": "Look for repeating numbers.",
+          "next": "r_plaque_patterns",
+          "effects": {
+            "observation": 1,
+            "flags": [
+              "noticed_patterns"
+            ]
+          }
+        }
+      ]
+    },
+    "r_plaque_assigned": {
+      "text": "You clean what you\u2019re told to clean.\n\nYour cloth turns gray.\n\nA guard nods without meeting your eyes.\n\nProcedure rewards procedure.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {}
+        }
+      ]
+    },
+    "r_plaque_extra": {
+      "text": "You move beyond your assigned section.\n\nNot rebellion.\n\nOvercompliance.\n\nYour shoulders begin to ache.\n\nA clerk watches you for a long moment, then looks away.\n\nThat feels worse than being stopped.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {
+            "attention": 1
+          }
+        }
+      ]
+    },
+    "r_plaque_groove": {
+      "text": "Your thumb finds the cut in the metal.\n\nThe groove is deeper than it should be.\n\nA tiny burr catches your skin.\n\nIt pricks.\n\nYou taste iron in your mouth though there is no blood.\n\nThe plaque numbers feel less like labels and more like locks.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {
+            "seamExposure": 1
+          }
+        }
+      ]
+    },
+    "r_plaque_patterns": {
+      "text": "You note repetition.\n\nA number appears twice.\n\nAnother is missing entirely.\n\nYour mind reaches for meaning.\n\nThe Gate gives you none.\n\nA guard\u2019s shadow crosses the plaques, slow and deliberate.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {
+            "attention": 1
+          }
+        }
+      ]
+    },
+    "work_mortar_1": {
+      "text": "You are given a dull scraper.\n\nIn a side corridor, old mortar has been disturbed\u2014repaired, then repaired again.\n\nThe task is to smooth the seam.\n\nIt is work meant to erase work.\n\nYou kneel.\n\nStone presses cold through your knees.",
+      "choices": [
+        {
+          "label": "Scrape shallow. Keep it safe.",
+          "next": "r_mortar_shallow",
+          "effects": {
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Scrape deeper, searching for the edge.",
+          "next": "r_mortar_deep",
+          "effects": {
+            "instability": 1,
+            "observation": 1,
+            "seamExposure": 2,
+            "flags": [
+              "forced_seam"
+            ]
+          }
+        },
+        {
+          "label": "Pause and listen between strokes.",
+          "next": "r_mortar_listen",
+          "effects": {
+            "observation": 1,
+            "flags": [
+              "night_listen"
+            ]
+          }
+        },
+        {
+          "label": "Work fast, as if speed is virtue.",
+          "next": "r_mortar_fast",
+          "effects": {
+            "instability": 1,
+            "exhaustion": 1
+          }
+        }
+      ]
+    },
+    "r_mortar_shallow": {
+      "text": "You skim the surface.\n\nThe seam remains, but it looks uniform.\n\nThat is the point.\n\nA guard\u2019s boots stop nearby.\n\nHe watches your hands until you steady your pace.\n\nThen he moves on.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {
+            "attention": 1
+          }
+        }
+      ]
+    },
+    "r_mortar_deep": {
+      "text": "Your scraper bites.\n\nThe mortar gives way in a thin line.\n\nCold air touches your knuckles.\n\nA breath from somewhere that is not this corridor.\n\nYour heart jumps.\n\nYou cover the gap instinctively.\n\nThe Gate does not react.\n\nWhich is how you know it noticed.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {
+            "attention": 2,
+            "exhaustion": 1
+          }
+        }
+      ]
+    },
+    "r_mortar_listen": {
+      "text": "You stop between strokes.\n\nIn the silence, you hear a second rhythm.\n\nNot brushes.\n\nNot footsteps.\n\nSomething like a distant chain settling.\n\nYou scrape again, slower.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {}
+        }
+      ]
+    },
+    "r_mortar_fast": {
+      "text": "You work quickly.\n\nMortar dust rises.\n\nYour lungs tighten.\n\nA cough threatens.\n\nYou swallow it down.\n\nSpeed is not virtue here.\n\nIt\u2019s exposure.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {
+            "attention": 1
+          }
+        }
+      ]
+    },
+    "work_crates_1": {
+      "text": "Crates wait in a narrow bay.\n\nNot heavy enough to be punishment.\n\nHeavy enough to be consequence.\n\nEach is stamped with the same seal:\nno words.\njust a circle and a line through it.\n\nThe task is relocation.\n\nFrom one side of the bay to the other.\n\nAs if movement alone proves usefulness.",
+      "choices": [
+        {
+          "label": "Lift carefully. One crate at a time.",
+          "next": "r_crate_careful",
+          "effects": {
+            "stability": 1,
+            "regulation": 1
+          }
+        },
+        {
+          "label": "Drag a crate to save your back.",
+          "next": "r_crate_drag",
+          "effects": {
+            "instability": 1,
+            "exhaustion": 1
+          }
+        },
+        {
+          "label": "Ask another worker to lift with you.",
+          "next": "r_crate_help",
+          "effects": {
+            "instability": 1,
+            "flags": [
+              "sought_help"
+            ]
+          }
+        },
+        {
+          "label": "Study the seal before moving anything.",
+          "next": "r_crate_seal",
+          "effects": {
+            "observation": 2,
+            "flags": [
+              "studied_seal"
+            ]
+          }
+        }
+      ]
+    },
+    "r_crate_careful": {
+      "text": "You lift with measured breath.\n\nThe crate shifts once, then settles.\n\nA guard watches your form like a craftsman.\n\nNo correction.\n\nNo approval.\n\nJust evaluation.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {
+            "attention": 1
+          }
+        }
+      ]
+    },
+    "r_crate_drag": {
+      "text": "Wood grinds against stone.\n\nThe sound travels.\n\nSeveral heads turn.\n\nA guard\u2019s gaze lands on you and stays there.\n\nYou finish anyway.\n\nYour arms shake afterward.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {
+            "attention": 2
+          }
+        }
+      ]
+    },
+    "r_crate_help": {
+      "text": "You meet someone\u2019s eyes.\n\nA silent question.\n\nThey step in.\n\nYou lift together.\n\nFor a moment it feels like coordination.\n\nThen you realize you\u2019ve made something visible.\n\nA guard\u2019s attention finds you both.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {
+            "attention": 2
+          }
+        }
+      ]
+    },
+    "r_crate_seal": {
+      "text": "The seal is simple.\n\nA circle.\n\nA line.\n\nNot prohibition.\n\nErasure.\n\nYou don\u2019t know what that means yet.\n\nBut you feel the meaning anyway.\n\nYou lift the crate.\n\nIt feels heavier after you looked.",
+      "choices": [
+        {
+          "label": "Continue.",
+          "next": "arc1_return_1",
+          "effects": {
+            "exhaustion": 1
+          }
+        }
+      ]
+    }
+  }
+}

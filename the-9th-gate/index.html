@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="bf308f80-b85b-4bda-9c06-0210d4922859"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Ninth Gate — Beta v1</title>
+
+  <meta name="description" content="A text-based solo playthrough inside the Ninth Gate. Choices compound. The system watches. Try to escape." />
+  <link rel="canonical" href="https://clearframeworks.org/the-9th-gate/" />
+
+  <!-- Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Ninth Gate" />
+  <meta property="og:description" content="A text-based solo playthrough inside the Ninth Gate. Choices compound. The system watches. Try to escape." />
+  <meta property="og:url" content="https://clearframeworks.org/the-9th-gate/" />
+  <meta property="og:image" content="https://clearframeworks.org/the-9th-gate/assets/homepage_hero.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Ninth Gate" />
+  <meta name="twitter:description" content="A text-based solo playthrough inside the Ninth Gate. Try to escape." />
+  <meta name="twitter:image" content="https://clearframeworks.org/the-9th-gate/assets/homepage_hero.png" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "The Ninth Gate",
+    "description": "A text-based solo playthrough inside the Ninth Gate. Choices compound. The system watches. Try to escape.",
+    "image": "https://clearframeworks.org/the-9th-gate/assets/homepage_hero.png",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web"
+  }
+  </script>
+
+  <link rel="stylesheet" href="./css/ninthgate.css" />
+  <meta name="robots" content="index,follow" />
+</head>
+<body class="ng-body">
+  <main class="ng-landing">
+    <h1 class="ng-title">THE NINTH GATE</h1>
+
+    <section class="ng-card ng-hero" aria-label="Cover">
+      <img class="ng-hero-img" src="./assets/homepage_hero.png" alt="The Ninth Gate cover art" loading="eager" />
+    </section>
+
+    <section class="ng-card ng-lore" aria-label="World and campaign lore">
+      <div class="ng-prose">
+        <p>— The Ninth Gate</p>
+<p>Most maps show this place as empty.</p>
+<p>A narrow stretch of land where roads thin, forests darken, and mountains press close enough together that travel slows on its own. Cartographers mark it lightly, if at all. There are no famous cities here. No heroic battles. Nothing worth remembering.</p>
+<p>That is why the Ninth Gate was built here.</p>
+<p>To the north, the Ice Mountains rise in cold silence, their passes few and unforgiving. To the northeast, the Tortured Lands sprawl outward—soil broken by old wars, scars never fully claimed by history. Between them, the Border Forest thickens, swallowing paths, reshaping itself faster than patrols can learn it.</p>
+<p>Three difficult places. One narrow crossing.</p>
+<p>Stone walls anchor the Gate into the earth. Towers rise not for defense, but for sight. Iron bars hang heavy, well-maintained, rarely bloodied. This is not a place meant to repel armies.</p>
+<p>It is meant to slow people down.</p>
+<p>King Canaan does not speak of conquest when he speaks of this region.</p>
+<p>He speaks of stability.<br>Of security.<br>Of administrative necessity.</p>
+<p>He does not march on dwarven holds carved into mountains, or burn elven forests that remember every trespass. Those peoples are difficult to fracture, costly to subdue, and inconvenient to govern. So he leaves them alone. Or pays them. Or hires them, when steel is needed and blame is useful.</p>
+<p>Human lands are easier.</p>
+<p>Human cities open their gates.<br>Human loyalties bend.<br>Human populations reorganize quietly, as long as life continues.</p>
+<p>And once an area is taken, it no longer matters who lived there before.</p>
+<p>Once claimed, everyone becomes something else.</p>
+<p>When Canaan’s banners move, they do not promise glory.</p>
+<p>They promise order.</p>
+<p>Taxes become contributions.<br>Surveillance becomes oversight.<br>Detainment becomes holding.</p>
+<p>Those who agree are reassigned, relocated, absorbed.<br>Those who resist are removed carefully, recorded cleanly, and sent to places with neutral names and no witnesses.</p>
+<p>No one calls them prison camps.</p>
+<p>And most people don’t ask.</p>
+<p>You arrive at the Ninth Gate with no ceremony.</p>
+<p>No charges are read aloud.<br>No accusations shouted.<br>Your gear is taken with practiced hands. Your names are written down, spelled correctly, filed away.</p>
+<p>Around you are others.</p>
+<p>Tieflings who crossed the wrong road.<br>Mercenaries without current contracts.<br>Civilians whose papers were almost in order.<br>Soldiers who outlived their usefulness.</p>
+<p>No one is mistreated.<br>No one is reassured.</p>
+<p>The Gate is quiet in the way systems become when they’ve learned patience.</p>
+<p>Somewhere beyond the walls, King Canaan’s rule stretches onward—measured, reasonable, relentless.</p>
+<p>Beyond the forest and the mountains, other races continue their lives untouched, for now. They are not the target. They are not the prize.</p>
+<p>The conquest is human.</p>
+<p>And here, at the narrow throat between lands, you sit where paths converge and pressure builds.</p>
+<p>The Ninth Gate does not exist to punish.</p>
+<p>It exists to decide what you are for.</p>
+<p>And tonight, something has shifted.</p>
+<p>Messages arrive and are not explained.<br>Guards speak less than usual.<br>The air feels tight, as if the Gate itself is waiting.</p>
+      </div>
+    </section>
+
+    <section class="ng-actions" aria-label="Start or continue">
+      <a class="ng-btn" href="./play.html?mode=new">Start</a>
+      <a class="ng-btn" id="continueBtn" href="./play.html?mode=continue" style="display:none;">Continue</a>
+    </section>
+
+    <footer class="ng-footer">
+      <span class="ng-footnote">Beta v1 — Arc 1 (Level 1) only.</span>
+    </footer>
+  </main>
+
+  <script>
+    (function(){
+      try {
+        const raw = localStorage.getItem("ninthGateSave_v1");
+        if (raw) document.getElementById("continueBtn").style.display = "inline-flex";
+      } catch(e) {}
+    })();
+  </script>
+</body>
+</html>

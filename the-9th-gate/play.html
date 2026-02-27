@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Ninth Gate — Play</title>
+  <link rel="stylesheet" href="./css/ninthgate.css" />
+  <meta name="robots" content="noindex,follow" />
+</head>
+<body class="ng-body">
+  <main class="ng-play">
+    <header class="ng-topbar">
+      <div class="ng-sigil" aria-hidden="true"></div>
+      <div class="ng-status">
+        <span class="ng-status-label">Exhaustion:</span>
+        <span id="exhaustionText" class="ng-status-value">Stable</span>
+      </div>
+      <button id="resetBtn" class="ng-linkbtn" type="button" title="Reset">Reset</button>
+    </header>
+
+    <section class="ng-panel">
+      <div id="story" class="ng-story" role="article" aria-live="polite"></div>
+    </section>
+
+    <section class="ng-choices" aria-label="Choices">
+      <div id="choices"></div>
+    </section>
+
+    <footer class="ng-footer">
+      <span class="ng-footnote"> </span>
+    </footer>
+  </main>
+
+  <script src="./js/engine.js"></script>
+</body>
+</html>
