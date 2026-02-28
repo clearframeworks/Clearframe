@@ -74,13 +74,13 @@ button, input, textarea{ font:inherit; color:inherit; }
   align-items:center;
   justify-content:space-between;
   gap:16px;
-  padding: 14px 0;
+  padding: 6px 0;
 }
 .brand{
   display:flex; align-items:center; gap:12px; min-width: 220px;
 }
 .brand img{
-  height: 88px;   /* try 88 */
+  height: 120px;   /* try 88 */
   width: auto;
 }
 .nav{
