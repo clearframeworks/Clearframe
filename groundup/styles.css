@@ -487,3 +487,81 @@ hr.sep{
 .intent-card.link{ display:block; }
 .intent-title{ display:block; font-weight: 800; letter-spacing: -0.01em; }
 .intent-sub{ display:block; margin-top: 6px; color: var(--muted); font-size: 13px; }
+/* ============================= */
+/* MOBILE BREAKPOINT FIXES */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  /* Header */
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .header-cta {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .header-cta .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Hero */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Split sections */
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  /* All 2 & 3 column grids collapse */
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  /* CTA band */
+  .cta-band {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cta-band .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-band .btn {
+    width: 100%;
+  }
+
+}
+/* Global image safety */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
